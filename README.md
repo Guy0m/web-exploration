@@ -8,7 +8,7 @@
 
 - Supprimer les doublons et liens trop courts t.co :  **elaguer.py url.txt**
 
-- Convertir une url raccourci en url complète et supprimer les doublons: **convertir.py url.csv**
+- Convertir une url raccourci en url complète et supprimer les doublons: **convertir.py url.txt**
 
 - Extraire le nom de domaine d'une liste d'URLs :**script.py url.csv**
 
