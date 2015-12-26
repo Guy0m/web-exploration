@@ -4,7 +4,7 @@
 
 **Les scripts**
 
-- Filtrer les tweets contenant un mot : **filtrer.py tweets.csv nomàfiltrer**
+- Filtrer les urls de tweets contenant un mot :  : **filtrer.py tweets.csv nomàfiltrer**
 - Supprimer les doublons et liens trop courts t.co :  **elaguer.py url.csv**
 - Convertir une url raccourci en url complète et supprimer les doublons: **convertir.py url.csv**
 - extraire le nom de domaine d'une liste d'URLs :**script.py url.csv**
