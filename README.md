@@ -4,9 +4,9 @@
 
 **Precrawl**
 
-- Filtrer les tweets contenant un mot : *script.py tweets.csv nomàfiltrer*
-- Supprimer les doublons et liens trop courts t.co :  * script.py url.csv *
-- Convertir une url raccourci en url complète : * script.py url.csv  *
+- Filtrer les tweets contenant un mot : **script.py tweets.csv nomàfiltrer**
+- Supprimer les doublons et liens trop courts t.co :  *script.py url.csv*
+- Convertir une url raccourci en url complète : *script.py url.csv *
 
 **Postcrawl**
  
