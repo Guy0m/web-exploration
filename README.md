@@ -10,7 +10,7 @@ sub heading
 
 **Precrawl**
 
-- Filtrer les tweets contenant un mot_____________________script.py tweets.csv nomàfiltrer
+- Filtrer les tweets contenant un mot____________________script.py tweets.csv nomàfiltrer
 - Supprimer les doublons et liens trop courts t.co________script.py url.csv
 - Convertir une url raccourci en url complète_____________script.py url.csv 
 
