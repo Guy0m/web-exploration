@@ -23,7 +23,7 @@ class main:
 	#print("\n".join(liste))
 	print 'nb_URLS apres suppression des doublons : ',str(len(liste))
 	
-	file = open("URLs.clean."+sys.argv[1]+".txt", "w")
+	file = open("clean."+sys.argv[1], "w")
 	print '\nResultat : '+ file.name
 	file.write("\n".join(liste))
 	file.close()
