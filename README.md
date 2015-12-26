@@ -9,7 +9,7 @@
 - Convertir une url raccourci en url complète et supprimer les doublons: **convertir.py url.csv**
 - extraire le nom de domaine d'une liste d'URLs :**script.py url.csv**
 
-**Format**
+**Format UTF-8**
 
 
 - **tweets.csv** : [text,to_user_id,from_user,id,from_user_id,iso_language_code,source,profile_image_url,geo_type,geo_coordinates_0,geo_coordinates_1,created_at,time]
