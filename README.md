@@ -14,8 +14,9 @@
 - extraire le nom de domaine d'une colonne :**script.py noeuds.csv**
 
 
+format tweets.csv : [text,to_user_id,from_user,id,from_user_id,iso_language_code,source,profile_image_url,geo_type,geo_coordinates_0,geo_coordinates_1,created_at,time]
 
-
+format url.csv : [
 
 heading
 ==============
