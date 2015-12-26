@@ -36,7 +36,7 @@ class main:
 			liste.append(elem)
 			liste_domain.append(domain)
 	total=len(liste)
-	print "Total URLs\n",total
+	print "Total URLs : ",total,'\n'
 	
 	liste_sansdoublons=list(set(liste_domain))
 	total_sansdoublons = len(liste_sansdoublons)
