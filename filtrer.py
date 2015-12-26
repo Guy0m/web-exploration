@@ -1,5 +1,6 @@
 # Auteur : Guillaume Durupt
 # Date : Decembre 2015
+# Version python : 2.7.9
 # Description : Filtrer les urls de tweets contenant un mot 
 # Utilisation :  filtrer.py tweets.csv nomafiltrer
 
@@ -15,8 +16,7 @@ class main:
 	i=0
 	nb_lignes=0
 	liste=[]
-	file = open("URLs."+sys.argv[2]+".txt", "w")
-  
+	
 	print "\nFiltrer : \n"
 	for row in csv:
 		nb_lignes=nb_lignes+1
@@ -31,6 +31,9 @@ class main:
 					liste.append(elem)	 
 
 	print 'Nombre de tweets contenant "'+sys.argv[2]+'".....',i,'/',nb_lignes,'\nNombre d\'URLs extraites  .................',len(liste)
-	print '\nResultat : '+ file.name
-	file.write("\n".join(liste))
-	file.close()
+	
+	if len(liste) != 0:
+		file = open("URLs."+sys.argv[2]+".txt", "w")
+		print '\nResultat : '+ file.name
+		file.write("\n".join(liste))
+		file.close()
