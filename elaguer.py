@@ -10,15 +10,20 @@ import sys
 import os
 
 class main:
-	file = list(open(sys.argv[1]).read().splitlines())
-	nb_URLS = len(file)
-	#print("\n".join(file))
+	liste = list(open(sys.argv[1]).read().splitlines())
+	nb_URLS = len(liste)
+	#print("\n".join(liste))
 	print 'nb_URLS dans le fichier',sys.argv[1],' : '+str(nb_URLS)
 	
-	file = [item for item in file if len(item) == 23 ]
-	print 'nb_URLS apres suppression des liens trop courts : ',str(len(file))
-	#print("\n".join(file))
+	liste = [item for item in liste if len(item) == 23 ]
+	print 'nb_URLS apres suppression des liens trop courts : ',str(len(liste))
+	#print("\n".join(liste))
 	
-	file=list(set(file))
-	#print("\n".join(file))
-	print 'nb_URLS apres suppression des doublons : ',str(len(file))
+	liste=list(set(liste))
+	#print("\n".join(liste))
+	print 'nb_URLS apres suppression des doublons : ',str(len(liste))
+	
+	file = open("URLs.clean."+sys.argv[1]+".txt", "w")
+	print '\nResultat : '+ file.name
+	file.write("\n".join(liste))
+	file.close()
