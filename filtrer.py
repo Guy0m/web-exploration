@@ -1,22 +1,23 @@
 # Auteur : Guillaume Durupt
 # Date : Decembre 2015
-# Description : Filtrer les urls de tweets contenant un mot : 
+# Description : Filtrer les urls de tweets contenant un mot 
+# Utilisation :  filtrer.py tweets.csv nomafiltrer
 
 import string
 import csv
 import re
 import sys
+import os
 
 class main:
-	#print sys.argv[1]
+
 	csv = csv.reader(open(sys.argv[1],"rb"))
-	
 	i=0
 	nb_lignes=0
 	liste=[]
-	file1 = open("urls."+sys.argv[2]+".txt", "w")
+	file = open("URLs."+sys.argv[2]+".txt", "w")
   
-	print "\nTraitement : \n"
+	print "\nFiltrer : \n"
 	for row in csv:
 		nb_lignes=nb_lignes+1
 			
@@ -29,6 +30,7 @@ class main:
 				for elem in url: #un tweet peut contenir plusieurs urls
 					liste.append(elem)	 
 
-	print 'nom.....',i,'/',nb_lignes,' tweets contenant  ',len(liste),' urls'
-	file1.write("\n".join(liste))
-	file1.close()
+	print 'Nombre de tweets contenant "'+sys.argv[2]+'".....',i,'/',nb_lignes,'\nNombre d\'URLs extraites  .................',len(liste)
+	print '\nResultat : '+ file.name
+	file.write("\n".join(liste))
+	file.close()
